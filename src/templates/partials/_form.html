@@ -1,0 +1,31 @@
+<form id="addNewProduct px-2 py-5">
+  <div class="form-group row">
+    <label for="product-code" class="col-md-2">Code</label>
+    <input type="number" class="form-control col" id="product-code">
+  </div>
+  <div class="form-group row">
+    <label for="product-name" class="col-md-2">Name</label>
+    <input type="text" class="form-control col" id="product-name">
+  </div>
+  <div class="form-group row">
+    <label for="product-price" class="col-md-2">Price</label>
+    <input type="number" class="form-control col" id="product-price">
+  </div>
+  <div class="form-group row">
+    <label class="col-2" for="product-isAvaliable">Avaliable</label>
+    <div class="col align-self-start px-0">
+        <input type="checkbox" id="product-isAvaliable">
+    </div>
+  </div>
+  <div class="form-group row">
+    <label for="product-image" class="col-md-2">Image</label>
+    <input type="file" class="form-control-file col px-0" id="product-image">
+  </div>
+  <div class="form-group row">
+    <label for="product-description" class="col-md-2">Description</label>
+    <textarea class="form-control col" id="product-description" rows="5"></textarea>
+  </div>
+  <div class="form-group row">
+    <button type="submit" class="btn btn-primary mb-2" id="saveNewProduct">Save</button>
+  </div>
+</form>

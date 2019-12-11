@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Mini_store</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#fff" />
+    <meta name="format-detection" content="telephone=no" />
+    <link rel="stylesheet" media="all" href="css/app.css" />
+  </head>
+  <body>
+    <!-- BEGIN content -->
+    <div class="out">
+      <header class="header">
+        <div class="container">
+          <div class="row row--role pt-4 pb-4 d-flex">
+            <button type="button" class="btn header-btn btn-primary" id="adminRole">admin</button>
+            <button type="button" class="btn header-btn btn-light ml-auto" id="userRole">user</button>
+          </div>
+          <div class="row row--roleAction pt-4 pb-4 d-flex">
+            <button type="button" class="btn header-btn btn-info ml-auto" id="addNew"> add </button>
+          </div>
+        </div>
+      </header>
+      <main>
+        <div class="container">
+          <form id="addNewProduct px-2 py-5">
+            <div class="form-group row">
+              <label for="product-code" class="col-md-2">Code</label>
+              <input type="number" class="form-control col" id="product-code">
+            </div>
+            <div class="form-group row">
+              <label for="product-name" class="col-md-2">Name</label>
+              <input type="text" class="form-control col" id="product-name">
+            </div>
+            <div class="form-group row">
+              <label for="product-price" class="col-md-2">Price</label>
+              <input type="number" class="form-control col" id="product-price">
+            </div>
+            <div class="form-group row">
+              <label class="col-2" for="product-isAvaliable">Avaliable</label>
+              <div class="col align-self-start px-0">
+                <input type="checkbox" id="product-isAvaliable">
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="product-image" class="col-md-2">Image</label>
+              <input type="file" class="form-control-file col px-0" id="product-image">
+            </div>
+            <div class="form-group row">
+              <label for="product-description" class="col-md-2">Description</label>
+              <textarea class="form-control col" id="product-description" rows="5"></textarea>
+            </div>
+            <div class="form-group row">
+              <button type="submit" class="btn btn-primary mb-2" id="saveNewProduct">Save</button>
+            </div>
+          </form>
+        </div>
+      </main>
+    </div>
+    <!-- END content -->
+    <!-- BEGIN scripts -->
+    <script type="text/javascript" src="js/app.js"></script>
+    <!-- END scripts -->
+  </body>
+</html>
